@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Product Service",
+      "type": "shell",
+      "command": "cd product-service && mvn clean package",
+      "group": "build"
+    },
+    {
+      "label": "Build Order Service",
+      "type": "shell",
+      "command": "cd order-service && mvn clean package",
+      "group": "build"
+    },
+    {
+      "label": "Build Customer Service",
+      "type": "shell",
+      "command": "cd customer-service && mvn clean package",
+      "group": "build"
+    }
+  ]
+}
